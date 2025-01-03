@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/anvas/mlops_2_2/mlruns/343342035277358479/43c1ce2315c944e9b8b7a532c85d5348/artifacts
+end_time: 1735901265725
+entry_point_name: ''
+experiment_id: '343342035277358479'
+lifecycle_stage: active
+run_id: 43c1ce2315c944e9b8b7a532c85d5348
+run_name: train_model_1-model_1
+run_uuid: 43c1ce2315c944e9b8b7a532c85d5348
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735901265657
+status: 4
+tags: []
+user_id: anvas

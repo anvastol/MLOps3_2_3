@@ -1,0 +1,12 @@
+stages:
+  download_data:
+    cmd: python data.py
+    outs:
+      - data/dataset.csv
+  process_data:
+    cmd: python process.py
+    deps:
+      - data/dataset.csv
+      - process.py
+    outs:
+      - data/proc_dataset.csv
