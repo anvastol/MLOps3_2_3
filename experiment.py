@@ -46,7 +46,7 @@ def main():
          accuracy = accuracy_score(y_test, y_pred)
          mlflow.log_metric("accuracy", accuracy)
          if task:
-             task.logger.report_scalar(title="Accuracy", series="Accuracy", value=accuracy)
+             task.logger.report_scalar(title="Accuracy", series="Accuracy", value=accuracy, iteration=0)
     
          mlflow.sklearn.log_model(model, artifact_path="logistic_regression")
 

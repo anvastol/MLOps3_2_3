@@ -1,0 +1,25 @@
+schema: '2.0'
+stages:
+  data:
+    cmd: python data.py
+    outs:
+    - path: data/dataset.csv
+      hash: md5
+      md5: 724664c7c9b6bd4a8220680b381e6aea
+      size: 2929
+  process:
+    cmd: python process.py
+    deps:
+    - path: data/dataset.csv
+      hash: md5
+      md5: 724664c7c9b6bd4a8220680b381e6aea
+      size: 2929
+    - path: process.py
+      hash: md5
+      md5: f56dc5040c5505243ff08c8b857a4d2f
+      size: 1252
+    outs:
+    - path: data/proc_dataset.csv
+      hash: md5
+      md5: d5c8c285a6517aa04a4863fadaf11b5a
+      size: 12288
